@@ -15,7 +15,8 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       title: 'Development hot module loading',
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      historyApiFallback: true
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
