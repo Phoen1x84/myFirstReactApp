@@ -6,8 +6,6 @@ import Submit from './../../components/form/submit';
 import Label from './../../components/form/label';
 import Legend from './../../components/form/legend';
 
-
-
 const Home = () => {
     return(
         <div>

@@ -1,6 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   // Here the application starts executing
@@ -30,6 +31,9 @@ module.exports = {
             presets: ['env', 'react']
           }
         }
+      }, {        
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       }
     ]
   },
