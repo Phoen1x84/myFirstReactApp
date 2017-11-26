@@ -13,10 +13,10 @@ module.exports = merge(common, {
 
   plugins: [
     new HtmlWebpackPlugin({
+      historyApiFallback: true,
       title: 'Development hot module loading',
       filename: 'index.html',
-      template: 'src/index.html',
-      historyApiFallback: true
+      template: 'src/index.html'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
