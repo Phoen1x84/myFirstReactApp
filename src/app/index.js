@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter} from 'react-router-dom';
 import App from './boot/app.js';
 
-
-// components
-import Submit from './components/form/submit';
-
 if (process.env.NODE_ENV !== 'production') {
   console.log('looks like we are in development mode!');
 }
