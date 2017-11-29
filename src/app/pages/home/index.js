@@ -7,15 +7,15 @@ import Label from './../../components/form/label';
 import Legend from './../../components/form/legend';
 
 const Home = () => {
-    return(
+    return (
         <div>
             <h1>hello world!</h1>
             <Form>
-                <Fieldset>      
+                <Fieldset>
                     <Legend text="Form legend" />
-                    <Label for="checkbox" text="checkbox label" />              
+                    <Label for="checkbox" text="checkbox label" />
                     <Checkbox id="checkbox" name="checkbox" value="checkbox" />
-                    <Submit value="Send" />                
+                    <Submit value="Enter" className="btn btn-primary" />
                 </Fieldset>
             </Form>
         </div>
